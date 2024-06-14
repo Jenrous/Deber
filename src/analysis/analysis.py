@@ -2,6 +2,7 @@ import pandas as pd  # Importa pandas para manejo de datos
 import os # Importa os para manejo del sistema de archivos
 from ..decorators.decorators import timeit, logit # importacion de los decoradores personalizados
 
+
 @logit # decorador para anadir el login a la funcion
 @timeit # decorador para meddir el tiempode ejecucion de la funcio n
 def load_data(data_path):
@@ -35,6 +36,12 @@ def analyze_data (df):
    print ("\nProducts with highest prices: ")
    highestPrices= df.nlargest(5,"price")
    print(highestPrices)
+
+#conexion a mogoDB
+
+# funcion para conectar a mongoDB
+@logit # decorador para anadir el login a la funcion
+@timeit # decorador para meddir el tiempode ejecucion de la funcio n
 
 
 

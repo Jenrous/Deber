@@ -61,3 +61,8 @@ python .\src\analysys\analysys.py
 Esto nos va a generar un CSV en la carpeta "PROCESSED" dentro de la carpeta "DATA" llamado "cleaned_products.csv"
 
 ### Estudiante: Jennifer Rocío Alarcón Parrales.
+
+
+rCsyWCd4obzR0nm8
+
+mongodb+srv://jenrous26:rCsyWCd4obzR0nm8@cluster0.tkel23i.mongodb.net/
