@@ -67,12 +67,12 @@ mongo_host = "localhost"
 mongo_port = "27017"
 mongo_time = 1000
 
-mongo_uri = "mongo://"+mongo_host+ ":" +mongo_port+ "/"
+mongo_uri = "mongodb://"+mongo_host+ ":" +mongo_port+ "/"
 
 try:
      client = pymongo.MongoClient(mongo_uri, serverSelectionTimeoutMS = mongo_time)
      client.server_info()
-     print(f"conexion exitosa")
+     print(f"Conexión exitosa a la base de datos")
      client.close()
 
 except pymongo.errors.ServerSelectionTimeoutError as errorTime:
@@ -80,4 +80,4 @@ except pymongo.errors.ServerSelectionTimeoutError as errorTime:
 except pymongo.errors.ConnectionFailure as errorConexion:
      print (f"fail conexion" + errorConexion)
 
-     
+      #mongodb+srv://jenrous26:<password>@cluster0.tkel23i.mongodb.net/
