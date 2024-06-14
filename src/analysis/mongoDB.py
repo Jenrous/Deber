@@ -1,5 +1,6 @@
 # import pandas as pd # se importa pnadas
-# from pymongo import MongoClient # se importa de la biblioteca pymongo mongoclient
+import pymongo
+from pymongo import MongoClient # se importa de la biblioteca pymongo mongoclient
 
 
 
@@ -62,4 +63,21 @@
 #     # analiza los datos y los almacena en mongoDB
 #     analyze_data(db)
 
-    
+mongo_host = "localhost"
+mongo_port = "27017"
+mongo_time = 1000
+
+mongo_uri = "mongo://"+mongo_host+ ":" +mongo_port+ "/"
+
+try:
+     client = pymongo.MongoClient(mongo_uri, serverSelectionTimeoutMS = mongo_time)
+     client.server_info()
+     print(f"conexion exitosa")
+     client.close()
+
+except pymongo.errors.ServerSelectionTimeoutError as errorTime:
+    print(f"full time" + errorTime) 
+except pymongo.errors.ConnectionFailure as errorConexion:
+     print (f"fail conexion" + errorConexion)
+
+     
