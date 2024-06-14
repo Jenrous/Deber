@@ -102,7 +102,7 @@ finally:
      print("Conexion finalizada exitosamente <3")
 
 # intento de conexion a mongodb: si
-# el almacenamiento fue de mongodb a pytthon.
+# el almacenamiento, fue de mongodb a python.
 
 
 

@@ -2,7 +2,7 @@
 
 ### Scraping Web de Productos.
 
-Este proyecto realiza scraping de datos de productos de un sitio web, limpia y analiza loo datos, y los guarda en archivos CSV y MongoDB.
+Este proyecto realiza scraping de datos de productos de un sitio web, limpia y analiza los datos y los guarda en archivos CSV y MongoDB.
 
 ### Requisitos.
 
@@ -15,9 +15,9 @@ time
 logging
 mongoDB
 
-### Instalacion.
+### Instalación.
 
-Para instalar las dependencias creamos un archivo "txt" el cual guardamos todas las dependecias para una rapida instalacion. Su metodo de uso es utilizando PIP y es con el comando siguiente.
+Para instalar las dependencias creamos un archivo "txt" el cual guardamos todas las dependecias para una rápida instalación. Su método de uso es utilizando PIP y es con el comando siguiente.
 ```bash
 pip install -r .\dep.txt
 ```
@@ -50,7 +50,7 @@ DEBER
 |__ requirements.txt    
 ```
 
-### Ejecucion del Scraper.
+### Ejecución del Scraper.
 Para ejecutar el scraper lo que hay que realizar es.
 ```bash
 python .\src\scraping\scraper.py
@@ -58,16 +58,17 @@ python .\src\scraping\scraper.py
 Esto nos va a generar un CSV en la carpeta "RAW" dentro de la carpeta "DATA" llamado "products.csv"
 
 
-### Ejecucion para el analisis de datos.
-Para ejecutar el script para analisis de datos lo que hay que realizar es.
+### Ejecución para el análisis de datos.
+Para ejecutar el script para análisis de datos lo que hay que realizar es.
 ```bash
 python .\src\analysys\analysys.py
 ```
 Esto nos va a generar un CSV en la carpeta "PROCESSED" dentro de la carpeta "DATA" llamado "cleaned_products.csv"
 
-### Instalcion de la biblioteca de  mongoDB
+### Instalción de la biblioteca de  mongoDB
 ```bash
 pip install pymongo
 ```
+URI: mongodb://localhost:27017/
 
 ### Estudiante: Jennifer Rocío Alarcón Parrales.
