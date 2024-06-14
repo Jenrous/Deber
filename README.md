@@ -18,8 +18,9 @@ mongoDB
 ### Instalacion.
 
 Para instalar las dependencias creamos un archivo "txt" el cual guardamos todas las dependecias para una rapida instalacion. Su metodo de uso es utilizando PIP y es con el comando siguiente.
-
+```bash
 pip install -r .\dep.txt
+```
 
 ### Estructura de las carpetas.
 ```bash
@@ -65,6 +66,8 @@ python .\src\analysys\analysys.py
 Esto nos va a generar un CSV en la carpeta "PROCESSED" dentro de la carpeta "DATA" llamado "cleaned_products.csv"
 
 ### Instalcion de la biblioteca de  mongoDB
+```bash
 pip install pymongo
+```
 
 ### Estudiante: Jennifer Rocío Alarcón Parrales.
