@@ -69,6 +69,6 @@ Esto nos va a generar un CSV en la carpeta "PROCESSED" dentro de la carpeta "DAT
 ```bash
 pip install pymongo
 ```
-URI: mongodb://localhost:27017/
+### URI: mongodb://localhost:27017/
 
 ### Estudiante: Jennifer Rocío Alarcón Parrales.
