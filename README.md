@@ -1,10 +1,10 @@
 ### Proyecto final python.
 
-Scraping Web de Productos.
+### Scraping Web de Productos.
 
 Este proyecto realiza scraping de datos de productos de un sitio web, limpia y analiza loo datos, y los guarda en archivos CSV y MongoDB.
 
-Requisitos.
+### Requisitos.
 
 Python 3.7+
 pandas
@@ -15,13 +15,14 @@ time
 logging
 mongoDB
 
-Instalacion.
+### Instalacion.
 
 Para instalar las dependencias creamos un archivo "txt" el cual guardamos todas las dependecias para una rapida instalacion. Su metodo de uso es utilizando PIP y es con el comando siguiente.
 
 pip install -r .\dep.txt
 
-Estructura de las carpetas.
+### Estructura de las carpetas.
+```bash
 DEBER
 |-- data/
 |    |- processed/
@@ -46,18 +47,24 @@ DEBER
 |__ dep.txt
 |__ README.md
 |__ requirements.txt    
+```
 
-
-Ejecucion del Scraper.
+### Ejecucion del Scraper.
 Para ejecutar el scraper lo que hay que realizar es.
-
+```bash
 python .\src\scraping\scraper.py
+```
 Esto nos va a generar un CSV en la carpeta "RAW" dentro de la carpeta "DATA" llamado "products.csv"
 
-Ejecucion para el analisis de datos.
-Para ejecutar el script para analisis de datos lo que hay que realizar es.
 
+### Ejecucion para el analisis de datos.
+Para ejecutar el script para analisis de datos lo que hay que realizar es.
+```bash
 python .\src\analysys\analysys.py
+```
 Esto nos va a generar un CSV en la carpeta "PROCESSED" dentro de la carpeta "DATA" llamado "cleaned_products.csv"
+
+### Instalcion de la biblioteca de  mongoDB
+pip install pymongo
 
 ### Estudiante: Jennifer Rocío Alarcón Parrales.
