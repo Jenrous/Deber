@@ -63,6 +63,11 @@ from pymongo import MongoClient # se importa de la biblioteca pymongo mongoclien
 #     # analiza los datos y los almacena en mongoDB
 #     analyze_data(db)
 
+
+# CONEXION A MONGO
+
+
+
 mongo_host = "localhost"
 mongo_port = "27017"
 mongo_time = 1000
@@ -75,9 +80,25 @@ try:
      print(f"Conexión exitosa a la base de datos")
      client.close()
 
+     
+
 except pymongo.errors.ServerSelectionTimeoutError as errorTime:
     print(f"full time" + errorTime) 
 except pymongo.errors.ConnectionFailure as errorConexion:
      print (f"fail conexion" + errorConexion)
 
+
+
+    
+
+
+
+
+
+
       #mongodb+srv://jenrous26:<password>@cluster0.tkel23i.mongodb.net/
+
+
+      #rCsyWCd4obzR0nm8
+
+#mongodb+srv://jenrous26:rCsyWCd4obzR0nm8@cluster0.tkel23i.mongodb.net/
